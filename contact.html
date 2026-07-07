@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="contact.css">
+         <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
     <nav class="navbar">
@@ -23,68 +24,64 @@
 
     <a href="#" class="contact-btn">Contact Me</a>
 </nav>
-    <section class="projects">
+    <section class="contact">
 
-    <div class="title">
-        <h1>My Projects</h1>
-        <p>Here are some of my latest frontend and UI/UX projects.</p>
+    <div class="contact-left">
+
+        <h1>Contact Me</h1>
+
+        <p>
+            Have a project in mind? Let's work together and create something amazing.
+        </p>
+
+        <div class="info">
+            <i class="fa-solid fa-envelope"></i>
+            <span>malaika@example.com</span>
+        </div>
+
+        <div class="info">
+            <i class="fa-solid fa-phone"></i>
+            <span>+92 300 1234567</span>
+        </div>
+
+        <div class="info">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Karachi, Pakistan</span>
+        </div>
+
     </div>
 
-    <div class="project-container">
+    <div class="glass-form">
 
-        <div class="project-card">
+        <form id="contactForm">
 
-            <img src="Screenshot 2026-07-07 222654.png" alt="">
+            <input
+            type="text"
+            placeholder="Full Name"
+            pattern="[A-Za-z ]{3,30}"
+            required>
 
-            <div class="content">
+            <input
+            type="email"
+            placeholder="Email Address"
+            required>
 
-                <h2>Nike Layout Desighn</h2>
+            <input
+            type="tel"
+            placeholder="Phone Number"
+            pattern="[0-9]{11}"
+            required>
 
-                <p>
-                    Responsive Nike animated desighn using Figma.
-                </p>
+            <textarea
+            rows="6"
+            placeholder="Your Message"
+            required></textarea>
 
-                <a href="https://www.figma.com/proto/R2NvAnfZfs88iV6ocxVksk/NIKE?node-id=0-1&t=1ds48rJxWNvrOiJd-1">Live Preview</a>
+            <button type="submit">
+                Send Message
+            </button>
 
-            </div>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="Screenshot 2026-06-20 154644.png" alt="">
-
-            <div class="content">
-
-                <h2>website</h2>
-
-                <p>
-                    Complete amusement park website with booking and gallery pages.
-                </p>
-
-                <a href="#">Live Preview</a>
-
-            </div>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="Screenshot 2026-07-07 230411.png" alt="">
-
-            <div class="content">
-
-                <h2>Restaurant Website</h2>
-
-                <p>
-                    Beautiful Restaurant website using html / CSS
-                </p>
-
-                <a href="#">Live Preview</a>
-
-            </div>
-
-        </div>
+        </form>
 
     </div>
 
