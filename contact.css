@@ -1,0 +1,229 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#222;
+}
+
+/* =========================
+        Banner
+========================= */
+
+.contact-banner{
+    width:100%;
+    height:60vh;
+    background:url("img/contact-banner.jpg") center/cover no-repeat;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.banner-content{
+    position:relative;
+    text-align:center;
+    color:white;
+    z-index:2;
+}
+
+.banner-content h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.banner-content p{
+    font-size:18px;
+}
+
+/* =========================
+      Contact Cards
+========================= */
+
+.contact-info{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.info-card{
+    background:white;
+    text-align:center;
+    padding:40px 25px;
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+}
+
+.info-card:hover{
+    transform:translateY(-10px);
+}
+
+.info-card i{
+    width:80px;
+    height:80px;
+    line-height:80px;
+
+    border-radius:50%;
+    background:#b3003c;
+
+    color:white;
+    font-size:30px;
+
+    margin-bottom:20px;
+}
+
+.info-card h3{
+    color:#b3003c;
+    margin-bottom:10px;
+}
+
+.info-card p{
+    color:#666;
+}
+
+/* =========================
+      Contact Section
+========================= */
+
+.contact{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.contact-image{
+    flex:1;
+}
+
+.contact-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+.contact-form{
+    flex:1;
+}
+
+.contact-form h2{
+    font-size:40px;
+    color:#b3003c;
+    margin-bottom:25px;
+}
+
+/* Form */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+form input,
+form textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+form input:focus,
+form textarea:focus{
+
+    border-color:#b3003c;
+
+    box-shadow:0 0 10px rgba(179,0,60,.2);
+}
+
+form textarea{
+
+    resize:none;
+}
+
+form button{
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:50px;
+
+    background:#b3003c;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+form button:hover{
+
+    background:#8c0030;
+
+    transform:translateY(-3px);
+}
+
+/* =========================
+      Responsive
+========================= */
+
+@media(max-width:768px){
+
+.contact{
+
+flex-direction:column;
+
+}
+
+.banner-content h1{
+
+font-size:40px;
+
+}
+
+.contact-form h2{
+
+font-size:30px;
+
+}
+
+}
